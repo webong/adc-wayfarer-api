@@ -1,11 +1,10 @@
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const morgan = require('morgan');
 const dotenv = require('dotenv');
 // const path = require('path');
 
 dotenv.config();
-
-const express = require('express');
-const cookieParser = require('cookie-parser');
-const morgan = require('morgan');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
