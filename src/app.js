@@ -6,8 +6,7 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const v1Router = require('./routes/v1/index');
 
 const app = express();
 
@@ -17,7 +16,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/v1', v1Router);
 
 module.exports = app;
