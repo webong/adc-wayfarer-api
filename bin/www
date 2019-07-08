@@ -1,9 +1,5 @@
 #!/usr/bin/env node
 
-/* eslint-disable no-console */
-/* eslint-disable no-use-before-define */
-
-
 /**
  * Module dependencies.
  */
@@ -16,7 +12,6 @@ const app = require('../src/app.js');
  * Get port from environment and store in Express.
  */
 
-// eslint-disable-next-line no-use-before-define
 const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
