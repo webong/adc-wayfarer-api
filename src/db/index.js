@@ -40,7 +40,7 @@ const query = (text, params) => {
  * @returns void
  */
 // eslint-disable-next-line arrow-body-style
-const raw = (text) => {
+const queryText = (text) => {
   pool.query(text)
     .then((res) => {
       console.log(res);
@@ -52,8 +52,8 @@ const raw = (text) => {
     });
 };
 
-export default {
-  raw,
-  query,
+module.exports = {
   pool,
+  query,
+  queryText,
 };

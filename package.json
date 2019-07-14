@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "dev": "cross-env NODE_ENV=development nodemon ./bin/www",
     "test": "cross-env NODE_ENV=test mocha test/**/*.js --exit",
-    "migrations": "node ./src/db/migrate createTables"
+    "migration": "node ./src/db/migrate"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
