@@ -8,9 +8,8 @@ cache:
     - "node_modules"
 before_script:
   - psql -c 'create database test;' -U postgres
-  - psql -c "create user wayfarer WITH PASSWORD 'rrwcscrz1';" -U postgres
   - npm run migration createAllTables
 script:
   - npm run test
 after_success:
-  - npm run coveralls
+  - coveralls

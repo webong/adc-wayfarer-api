@@ -6,7 +6,6 @@
     "start": "node ./bin/www",
     "dev": "cross-env NODE_ENV=development nodemon ./bin/www",
     "test": "cross-env NODE_ENV=test mocha test/**/*.js --exit",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "migration": "node ./src/db/migrate"
   },
   "dependencies": {
@@ -35,7 +34,6 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.18.0",
     "mocha": "^6.1.4",
-    "mocha-lcov-reporter": "^1.3.0",
     "nodemon": "^1.19.1"
   }
 }
