@@ -4,11 +4,11 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const config = {
-  user: process.env.PG_USER,
-  host: process.env.PG_HOST,
-  database: process.env.PG_DATABASE,
-  password: process.env.PG_PASSWORD,
-  port: process.env.PG_PASSWORD,
+  user: process.env.PGUSER,
+  host: process.env.PGHOST,
+  database: process.env.PGDATABASE,
+  password: process.env.PGPASSWORD,
+  port: process.env.PGPASSWORD,
   max: 10, // max number of clients in the pool
   idleTimeoutMillis: 30000,
 };
