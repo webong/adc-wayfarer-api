@@ -6,6 +6,7 @@
     "start": "node ./bin/www",
     "dev": "cross-env NODE_ENV=development nodemon ./bin/www",
     "test": "cross-env NODE_ENV=test mocha test/**/*.js --exit",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "migration": "node ./src/db/migrate"
   },
   "dependencies": {
@@ -34,6 +35,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.18.0",
     "mocha": "^6.1.4",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "nyc": "^14.1.1"
   }
 }
