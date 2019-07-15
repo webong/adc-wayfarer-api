@@ -31,7 +31,7 @@ module.exports.dropUserTable = () => {
 /**
  * Create All Tables
  */
-module.exports.createTables = () => {
+module.exports.createAllTables = () => {
   this.createUserTable();
 };
 
